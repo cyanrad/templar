@@ -3,6 +3,7 @@ A snippet generation tool using the golang text templating language
 
 # Usage
 each object in the root array is an `operation`
+
 each `operation` is repeated for each `value` it has
 
 to run simply
@@ -12,8 +13,11 @@ go run .
 <br />
 
 `name` the template file name
+
 `out` the output file name
+
 `values` all the values used inside the template should be specified here
+
 for each value 1 output file is generated
 
 # Exmaple
