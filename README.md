@@ -32,8 +32,6 @@ for each value 1 output file is generated
             }
         ]
     }, 
-    // other operations
-    {...}
 ] 
 ```
 
