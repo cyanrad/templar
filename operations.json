@@ -1,0 +1,29 @@
+[
+    {
+        "name": "example.txt",
+        "out": "ex.txt",
+        "values": [
+            {
+                "value": "test"
+            },
+            {
+                "value": 5
+            }
+        ]
+    },
+    {
+        "name": "anotherExample.txt",
+        "out": "service.ts",
+        "values": [
+            {
+                "type": "Person"
+            },
+            {
+                "type": "Teacher"
+            },
+            {
+                "type": "School"
+            }
+        ]
+    }
+]

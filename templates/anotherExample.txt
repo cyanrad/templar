@@ -1,0 +1,23 @@
+@Injectable()
+export class {{.type}}Service {
+    constructor(private db: DbService) {}
+
+    async create{{.type}}(data: Create{{.type}}Dto): Promise<{{.type}}> {
+        let new{{.type}}: {{.type}};
+
+        try {
+            new{{.type}} = await this.db.db_{{.type}}.create({
+                data: data,
+            });
+        } catch (e) {
+            if (e instanceof Prisma.PrismaClientKnownRequestError) {
+                if (e.code === 'P2002') {
+                    throw new ForbiddenException('account exists');
+                }
+            }
+            throw e;
+        }
+
+        return new{{.type}};
+    }
+}
