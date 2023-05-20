@@ -1,5 +1,5 @@
 # Templa{{.r}}
-A snippet generation tool using the golang text templating language
+A snippet generation tool using the golang text templating syntax
 
 # Usage
 each object in the root array is an `operation`
